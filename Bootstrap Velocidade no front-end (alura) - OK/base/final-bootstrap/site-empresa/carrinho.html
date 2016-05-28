@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Loja virtual</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<meta name="viewport" content="width=device-width" />
+		<style>
+			body {
+				font-size:18px;
+			}
+			.navbar-header button {
+				color: #fff
+			}
+			.fullscreen {
+				width:100%;
+			}
+			main {
+				padding-top:50px;
+			}
+			footer {
+				background:#333;
+				color:#fff;
+				padding:20px 0;
+				text-align:center;
+			}
+			.tab-pane {
+				padding:10px 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-header">
+					<a href="#home" class="navbar-brand">Caelum</a>
+					<button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav nav">
+						<li><a href="#novidades">Novidades</a></li>
+						<li><a href="#maisVendidos">Mais vendidos</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Camisetas
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Masculinas</a></li>
+								<li><a href="#">Femininas</a></li>
+								<li><a href="#">Infantil</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Digite a sua busca" />
+						</div>
+						<input type="submit" value="Buscar" class="btn btn-default" />
+					</form>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h2 class="panel-title">Sua Compra</h2>
+							</div>
+							<div class="panel-body">
+								<img src="img/produto.png" alt="Camiseta azul" class="img-responsive thumbnail">
+
+								<dl>
+									<dt>Nome</dt>
+									<dd>Camiseta azul</dd>
+
+									<dt>Cor</dt>
+									<dd>Azul</dd>
+
+									<dt>Tamanho</dt>
+									<dd>G</dd>
+
+									<dt>Preço</dt>
+									<dd>R$ 129,00</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-8">
+						<form>
+							<fieldset>
+								<legend>Informações do usuário</legend>
+								<div class="form-group">
+									<label for="nome">Nome completo:</label>
+									<input id="nome" type="text" class="form-control" />
+								</div>
+
+								<div class="form-group">
+									<label for="email">Email:</label>
+									<div class="input-group">
+										<span class="input-group-addon">@</span>
+										<input id="email" type="email" class="form-control" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="cpf">CPF:</label>
+									<input id="cpf" type="text" class="form-control" />
+								</div>
+
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" id="novidades" value="sim" checked="checked" />
+										Quero receber novidades da loja
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset>
+								<legend>Informações de pagamento</legend>
+
+								<div class="form-group">
+									<label for="bandeira">Bandeira:</label>
+									<select id="bandeira" class="form-control">
+										<option value="visa">Visa</option>
+										<option value="mastercard">Mastercard</option>
+										<option value="amex">American Express</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="numero">Número</label>
+									<input id="numero" type="number" class="form-control" />
+								</div>
+
+								<div class="form-group">
+									<label for="validade">Validade</label>
+									<input id="validade" type="month" class="form-control" />
+								</div>
+
+								<div class="form-group">
+									<label for="cvv">CVV</label>
+									<input id="cvv" type="text" maxlength="4" class="form-control" />
+								</div>
+							</fieldset>
+
+							<button type="submit" class="btn btn-primary">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Confirmar pedido
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>Avenida Paulista nº 1</p>
+    		<p>(11) 2239-1234</p>
+		</footer>
+		<script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	</body>
+</html>

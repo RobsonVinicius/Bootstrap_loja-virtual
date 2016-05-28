@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Loja virtual</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<meta name="viewport" content="width=device-width" />
+		<style>
+			.navbar-header button {
+				color: #fff
+			}
+			.fullscreen {
+				width:100%;
+			}
+			main {
+				padding-top:50px;
+			}
+			footer {
+				background:#333;
+				color:#fff;
+				padding:20px 0;
+				text-align:center;
+			}
+			.tab-pane {
+				padding:10px 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-header">
+					<a href="#home" class="navbar-brand">Caelum</a>
+					<button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav nav">
+						<li><a href="#novidades">Novidades</a></li>
+						<li><a href="#maisVendidos">Mais vendidos</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Camisetas
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Masculinas</a></li>
+								<li><a href="#">Femininas</a></li>
+								<li><a href="#">Infantil</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Digite a sua busca" />
+						</div>
+						<input type="submit" value="Buscar" class="btn btn-default" />
+					</form>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<img src="img/produto.png" alt="Camiseta azul" class="img-responsive thumbnail">
+					</div>
+	
+					<div class="col-sm-8">
+						<div class="text-center">
+							<h1>Camiseta azul importada</h1>
+							<h3>R$ 129,00</h3>
+							<a href="#" class="btn btn-primary btn-lg">Comprar</a>
+						</div>
+
+						<div class="row">
+							<ul class="nav nav-tabs">
+								<li class="nav active">
+									<a href="#descricao" data-toggle="tab">Descrição</a>
+								</li>
+								<li class="nav">
+									<a href="#informacoes" data-toggle="tab">Informações Técnicas</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="descricao">
+									<p>
+										Camiseta azul feita em algodão com caimento perfeito proporcionando leveza e conforto nos movimentos.
+									</p>
+									<p>
+										Camiseta meia manga com decote arrendondado e importada.
+									</p>
+								</div>
+
+								<div class="tab-pane fade" id="informacoes">
+									<table class="table table-responsive">
+										<tbody>
+											<tr>
+												<td>Tecido</td>
+												<td>Algodão</td>
+											</tr>
+											<tr>
+												<td>Tamanho</td>
+												<td>P, M, G, GG</td>
+											</tr>
+											<tr>
+												<td>Fabricante</td>
+												<td>Caelum</td>
+											</tr>
+											<tr>
+												<td>Origem</td>
+												<td>China</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>Avenida Paulista nº 1</p>
+    		<p>(11) 2239-1234</p>
+		</footer>
+		<script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	</body>
+</html>
