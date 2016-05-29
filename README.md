@@ -1,6 +1,6 @@
 # bootstrap
 
-<h3>Este repositório foi criado para hospedar trabalhos com o framework bootstrap.</h3>
+<h3>Loja virtual básica criada com o framework bootstrap (exercício realizado no curso velocidade no front end pela alura)</h3>
 
 <p>Abaixo alguns links de apoio:</p>
 <a href="http://getbootstrap.com/getting-started/" target="_blank">Download Bootstrap</a><br>
