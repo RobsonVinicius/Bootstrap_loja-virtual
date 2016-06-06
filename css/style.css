@@ -31,4 +31,43 @@ footer {
 .tab-pane {
 	padding:10px 5px;
 			}
+			
+.margen-titulo { 
+	margin-left: 50px;
+		}
 
+.margem-menu { 
+	margin-left: 30px;
+	}
+
+.margem-buscar { 
+	margin-right: 20px;
+	}
+	
+.margen-titulo-roupa {
+	margin-left: 40px;
+	}
+
+.margen-baixo {
+	margin-bottom: 50px;
+	
+	}
+
+	
+@media (max-width: 767px) {
+	
+.margen-titulo { 
+	margin-left: 0px;
+		}	
+	
+.margem-menu { 
+	margin-left: 0px;
+	}
+	
+.margem-buscar {
+	margin-right: 0px;
+	
+	}
+
+	
+}
