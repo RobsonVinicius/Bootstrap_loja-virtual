@@ -53,6 +53,14 @@ footer {
 	
 	}
 
+.carousel-caption h3 { 
+  font-size: 45px;
+}
+
+.carousel-caption p { 
+  font-size: 23px;
+}
+
 	
 @media (max-width: 767px) {
 	
@@ -68,6 +76,18 @@ footer {
 	margin-right: 0px;
 	
 	}
+  
+.carousel-caption h3 { 
+  font-size: 23px;
+}
+
+.carousel-caption p { 
+  font-size: 12px;
+}
+
+  .carousel-indicators {
+    display: none;
+  }
 
 	
 }
